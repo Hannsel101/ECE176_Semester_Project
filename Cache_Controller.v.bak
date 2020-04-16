@@ -1,0 +1,19 @@
+module Cache_Controller(
+	input clk,
+	input [7:0] tag,
+	input [2:0] index,
+	input readFlag, writeFlag,
+	output stall);
+
+	reg [10:0] cache_Table [0:7];//Table for searching the data.
+
+	integer i = 0;
+	initial
+	begin
+		for(i=0; i<8; i=i+1)
+		begin
+			
+		end
+	end
+
+endmodule

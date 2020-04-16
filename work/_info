@@ -8,18 +8,84 @@ z2
 !i10f 100
 cModel Technology
 dC:/Users/Hannselthill Camacho/Desktop/Spring2020/ECE176/project
+vCache
+!s110 1587019946
+!i10b 1
+!s100 V`FfRNAj`5O`Y69d7iilW3
+ICnCCZ0N[jD4`G0oL7]gnz2
+Z0 VDg1SIo80bB@j0V0VzS_@n1
+Z1 dG:/GithubRepos/ECE176_Semester_Project
+w1587019817
+8G:/GithubRepos/ECE176_Semester_Project/Cache.v
+FG:/GithubRepos/ECE176_Semester_Project/Cache.v
+L0 1
+Z2 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1587019946.000000
+!s107 G:/GithubRepos/ECE176_Semester_Project/Cache.v|
+!s90 -reportprogress|300|-work|work|-stats=none|G:/GithubRepos/ECE176_Semester_Project/Cache.v|
+!i113 1
+Z3 o-work work
+Z4 tCvgOpt 0
+n@cache
+vCache_Controller
+!s110 1587019803
+!i10b 1
+!s100 2X7^d;1JT=7R]29DjY==K1
+IV8Qg<`nC]1lcYBU]bNE7b2
+R0
+R1
+w1587019800
+8G:/GithubRepos/ECE176_Semester_Project/Cache_Controller.v
+FG:/GithubRepos/ECE176_Semester_Project/Cache_Controller.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1587019803.000000
+!s107 G:/GithubRepos/ECE176_Semester_Project/Cache_Controller.v|
+!s90 -reportprogress|300|-work|work|-stats=none|G:/GithubRepos/ECE176_Semester_Project/Cache_Controller.v|
+!i113 1
+R3
+R4
+n@cache_@controller
+vCache_Memory
+!s110 1587019948
+!i10b 1
+!s100 @cP>>M7@lei?D[]:fYK6S3
+Ih_i;HIR]io53JW<K::]3_1
+R0
+R1
+w1587019938
+8G:/GithubRepos/ECE176_Semester_Project/Cache_Memory.v
+FG:/GithubRepos/ECE176_Semester_Project/Cache_Memory.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1587019948.000000
+!s107 G:/GithubRepos/ECE176_Semester_Project/Cache_Memory.v|
+!s90 -reportprogress|300|-work|work|-stats=none|G:/GithubRepos/ECE176_Semester_Project/Cache_Memory.v|
+!i113 1
+R3
+R4
+n@cache_@memory
 vControl
 !s110 1587016797
 !i10b 1
 !s100 K5@KQi1fzIc;F6oFQObEc2
 IWCMY_V3fSkaC=MzMTaZ2W0
-Z0 VDg1SIo80bB@j0V0VzS_@n1
-Z1 dG:/GithubRepos/ECE176_Semester_Project
+R0
+R1
 w1586984751
 8G:/GithubRepos/ECE176_Semester_Project/Control.v
 FG:/GithubRepos/ECE176_Semester_Project/Control.v
 L0 1
-Z2 OV;L;10.5b;63
+R2
 r1
 !s85 0
 31
@@ -27,8 +93,8 @@ r1
 !s107 G:/GithubRepos/ECE176_Semester_Project/Control.v|
 !s90 -reportprogress|300|-work|work|-stats=none|G:/GithubRepos/ECE176_Semester_Project/Control.v|
 !i113 1
-Z3 o-work work
-Z4 tCvgOpt 0
+R3
+R4
 n@control
 vMux_2to1
 !s110 1587016802
