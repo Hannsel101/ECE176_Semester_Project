@@ -4,7 +4,7 @@ module Cache_Memory(
 	input [1:0] offSet, controlBits,
 	input [12:0] writeData,
 	input [38:0] mainMemoryIn,
-	output [12:0] readData);
+	output reg [12:0] readData);
 
 	integer i = 0;
 	reg [12:0] Data [0:7];//8x13 bits of cache storage space
@@ -17,15 +17,20 @@ module Cache_Memory(
 		end		
 	end
 
+
 	always @(negedge clk)
 	begin
 		case(controlBits)
 			2'b00://IDLE
 				$display("Cache Memory is Idling");
 			2'b01://READ
-				$display("Reading from cache");
+				begin
+					readData <= Data[index];
+				end
 			2'b10://WRITE
-				$display("Writing to cache");
+				begin
+					Data[index] <= writeData;
+				end
 			2'b11://PULL_FROM_MAIN_MEMORY
 				$display("Pulling a block of data from Main Memory");
 			default://Handle High impedance and unknowns
