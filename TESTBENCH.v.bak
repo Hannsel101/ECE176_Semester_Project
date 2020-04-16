@@ -1,0 +1,15 @@
+module TESTBENCH();
+
+	reg [2:0] modTester;
+	wire [2:0] modOutput;
+
+
+
+
+
+
+
+
+
+
+endmodule

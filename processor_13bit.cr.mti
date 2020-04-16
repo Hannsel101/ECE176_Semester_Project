@@ -1,9 +1,24 @@
-G:/GithubRepos/ECE176_Semester_Project/Mux_2to1.v {1 {vlog -work work -stats=none G:/GithubRepos/ECE176_Semester_Project/Mux_2to1.v
+G:/GithubRepos/ECE176_Semester_Project/Cache_Controller.v {1 {vlog -work work -stats=none G:/GithubRepos/ECE176_Semester_Project/Cache_Controller.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module Cache_Controller
+
+Top level modules:
+	Cache_Controller
+
+} {} {}} G:/GithubRepos/ECE176_Semester_Project/Mux_2to1.v {1 {vlog -work work -stats=none G:/GithubRepos/ECE176_Semester_Project/Mux_2to1.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module Mux_2to1
 
 Top level modules:
 	Mux_2to1
+
+} {} {}} G:/GithubRepos/ECE176_Semester_Project/TESTBENCH.v {1 {vlog -work work -stats=none G:/GithubRepos/ECE176_Semester_Project/TESTBENCH.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module TESTBENCH
+-- Compiling module modulo
+
+Top level modules:
+	TESTBENCH
 
 } {} {}} G:/GithubRepos/ECE176_Semester_Project/Cache.v {1 {vlog -work work -stats=none G:/GithubRepos/ECE176_Semester_Project/Cache.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
