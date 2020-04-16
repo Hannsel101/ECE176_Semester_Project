@@ -3,7 +3,7 @@ module Cache_Controller(
 	input [7:0] tag,
 	input [2:0] index,
 	input readFlag, writeFlag,
-	output stall, hit);
+	output reg stall, hit);
 
 	localparam VALID = 1;
 	localparam INVALID = 0;
