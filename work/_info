@@ -9,7 +9,7 @@ z2
 cModel Technology
 dC:/Users/Hannselthill Camacho/Desktop/Spring2020/ECE176/project
 vCache
-Z0 !s110 1587087543
+Z0 !s110 1587087746
 !i10b 1
 !s100 V`FfRNAj`5O`Y69d7iilW3
 ICnCCZ0N[jD4`G0oL7]gnz2
@@ -23,7 +23,7 @@ Z4 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z5 !s108 1587087543.000000
+Z5 !s108 1587087746.000000
 !s107 G:/GithubRepos/ECE176_Semester_Project/Cache.v|
 !s90 -reportprogress|300|-work|work|-stats=none|G:/GithubRepos/ECE176_Semester_Project/Cache.v|
 !i113 1
@@ -118,7 +118,7 @@ r1
 R6
 R7
 vMux_2to1
-R0
+!s110 1587087745
 !i10b 1
 !s100 gXheW7iX=KeM7QUch3D]Y3
 InXRmo5Um7KTZe:E6@i;JI3
@@ -132,7 +132,7 @@ R4
 r1
 !s85 0
 31
-!s108 1587087542.000000
+!s108 1587087745.000000
 !s107 G:/GithubRepos/ECE176_Semester_Project/Mux_2to1.v|
 !s90 -reportprogress|300|-work|work|-stats=none|G:/GithubRepos/ECE176_Semester_Project/Mux_2to1.v|
 !i113 1
