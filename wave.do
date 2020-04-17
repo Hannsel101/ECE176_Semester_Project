@@ -1,8 +1,6 @@
 onerror {resume}
 quietly WaveActivateNextPane {} 0
 add wave -noupdate -divider {FUNCTIONS TEST BEGIN}
-add wave -noupdate -expand -group {MODULO TEST WAVES} -label {Modulo Output} -radix unsigned /TESTBENCH/modOutput
-add wave -noupdate -expand -group {MODULO TEST WAVES} -label {Modulo Input} -radix unsigned /TESTBENCH/modTester
 add wave -noupdate -divider {FUNCTIONS TEST END}
 add wave -noupdate -divider <NULL>
 add wave -noupdate -divider {CACHE TEST BEGIN}
@@ -15,11 +13,10 @@ add wave -noupdate -divider {REGISTER TEST BEGIN}
 add wave -noupdate -divider {REGISTER TEST END}
 add wave -noupdate -divider <NULL>
 TreeUpdate [SetDefaultTree]
-quietly WaveActivateNextPane
-WaveRestoreCursors
+WaveRestoreCursors {{Cursor 1} {0 ns} 0}
 quietly wave cursor active 0
 configure wave -namecolwidth 199
-configure wave -valuecolwidth 39
+configure wave -valuecolwidth 40
 configure wave -justifyvalue left
 configure wave -signalnamewidth 0
 configure wave -snapdistance 10
@@ -32,4 +29,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ps
 update
-WaveRestoreZoom {0 ps} {6 ps}
+WaveRestoreZoom {0 ns} {5824 ns}
