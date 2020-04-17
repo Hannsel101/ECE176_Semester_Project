@@ -1,4 +1,4 @@
-module modulo();
+//module modulo();
 
 	function [2:0] modulo;
 		input [2:0] operand;
@@ -13,4 +13,4 @@ module modulo();
 		end
 	endfunction
 
-endmodule
+//endmodule

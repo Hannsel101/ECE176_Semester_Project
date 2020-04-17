@@ -39,6 +39,10 @@ module Cache_Controller(
 				begin
 					hit <= 1;
 				end
+				else
+				begin
+					stall <= 1;
+				end
 			end
 			3'b010:
 			begin

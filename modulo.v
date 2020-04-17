@@ -1,7 +1,7 @@
 //module modulo();
 
 	function [2:0] modulo;
-		input [2:0] operand;
+		input [7:0] operand;
 		integer i;
 
 		begin
