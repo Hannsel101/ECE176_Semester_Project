@@ -1,6 +1,21 @@
 module TESTBENCH();
 
+	reg clk, reset;
+	
+	initial begin
+		clk = 0;
+		reset = 1;
+		#2
+		reset = 0;
+		#2;
+		#2;
+		#2;
+		#2;
+		#10 $finish;
+	end
 
+	always
+		#1 clk = ~clk;
 
 //---------------------------------------------
 	reg [7:0] modTester;
@@ -40,8 +55,41 @@ module TESTBENCH();
 		signExtendIn = -256;
 		#2;
 	end
+//---------------------------------------------
+	reg [55:0] hannsel;
+	initial
+	begin
+		hannsel = 56'h48414E4E53454C;
+	end
+//---------------------------------------------
+	reg [12:0] address, dataIn;
+	wire [12:0] dataOut;
+	reg write, read;
+	wire Done;
 
-
+	//Testing Main_Memory (Unchached)
+	initial
+	begin
+		#2//Wait for reset to finish
+		address = 0;
+		write = 0;
+		dataIn = 13'hF0F0;
+		read = 1;
+		#2
+		read = 0;
+		write = 1;
+		#2
+		write = 0;
+		read = 1;
+	end
+	Main_Memory Memory(address, dataIn, dataOut, write, read, clk, reset, Done);
+//---------------------------------------------
+//---------------------------------------------
+//---------------------------------------------
+//---------------------------------------------
+//---------------------------------------------
+//---------------------------------------------
+//---------------------------------------------
 
 
 
