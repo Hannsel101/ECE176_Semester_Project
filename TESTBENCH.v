@@ -64,7 +64,7 @@ module TESTBENCH();
 //---------------------------------------------
 	reg [12:0] address, dataIn;
 	wire [12:0] dataOut;
-	reg write, read;
+	reg write, read, instruction;
 	wire Done;
 
 	//Testing Main_Memory (Unchached)
@@ -72,6 +72,7 @@ module TESTBENCH();
 	begin
 		#2//Wait for reset to finish
 		address = 0;
+		instruction = 0;
 		write = 0;
 		dataIn = 13'hF0F0;
 		read = 1;
@@ -81,8 +82,10 @@ module TESTBENCH();
 		#2
 		write = 0;
 		read = 1;
+		#2
+		instruction = 1;
 	end
-	Main_Memory Memory(address, dataIn, dataOut, write, read, clk, reset, Done);
+	Main_Memory Memory(address, dataIn, dataOut, write, read, instruction, clk, reset, Done);
 //---------------------------------------------
 //---------------------------------------------
 //---------------------------------------------
