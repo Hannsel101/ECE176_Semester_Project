@@ -18,6 +18,7 @@ module Control(
 			PC <= 0;
 			InstructionTypeSelect <= 0;
 			WriteFlag <= 0;
+			ReadFlag <= 0;
 			instruction <= 0;
 		end
 		else//Normal Operation
@@ -61,10 +62,34 @@ module Control(
 					end
 				3'b010://Perform arithmetic operations
 					begin
+						ALU_Op <= Opcode;//Send the new instruction to ALU
 						state <= state + 1;
 					end
 				3'b011://Send the result to the appropriate location
 					begin
+						casex(Opcode)//Determine where to write into based on opcode
+							3'b00X: //Add or Sub
+								begin
+									WriteFlag <= 1;
+								end
+							3'b01X: //Addi or Subi
+								begin
+									WriteFlag <= 0;
+								end
+							3'b10X: //Branching Instructions
+								begin
+									WriteFlag <= 0;
+								end
+							3'b11X: //Floating Point Operation
+								begin
+									WriteFlag <= 1;
+								end
+							default:
+								begin
+									$display("In default for Control. This should never happen!");
+								end
+						endcase
+						
 						state <= state + 1;
 					end
 				default: //Increment the program counter
