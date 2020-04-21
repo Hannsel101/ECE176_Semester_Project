@@ -111,8 +111,19 @@ module TESTBENCH();
 	wire [2:0] OpcodeDecoder, R1, R2, R3;
 	wire [3:0] immediate;
 	
+	//Testing Decoder
+	initial
+	begin
+		instructionDecoder = 13'b00X1011101110;//rtype R5, R6, R7
+		#4
+		instructionDecoder = 13'b01X0010101010;//itype R1, R2, 10
+		#4
+		instructionDecoder = 13'b10X0010101100;//branch R1, R2, R6
+		#4
+		instructionDecoder = 13'b11X0010010010;//floating R1, R1, R1
+	end
 	
-	Decoder decoder(instruction,Opcode,R1, R2, R3,immediate);
+	Decoder decoder(instructionDecoder,OpcodeDecoder,R1, R2, R3,immediate);
 //---------------------------------------------
 //---------------------------------------------
 //---------------------------------------------

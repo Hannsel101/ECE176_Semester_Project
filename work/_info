@@ -97,13 +97,13 @@ R6
 R7
 n@control
 vDecoder
-!s110 1587481192
+!s110 1587483352
 !i10b 1
-!s100 ;ocY]`>PT`C@T=<b8hgVm3
-I4Ta:NC^L[Qo[@8lD3jQM:0
+!s100 HjDLHlNS0EOgVQYmS1iW[2
+IgY7?502DPHAM3BT1?aFX@2
 R1
 R2
-w1587481158
+w1587483345
 8G:\GithubRepos\ECE176_Semester_Project\Decoder.v
 FG:\GithubRepos\ECE176_Semester_Project\Decoder.v
 L0 1
@@ -111,7 +111,7 @@ R4
 r1
 !s85 0
 31
-!s108 1587481192.000000
+!s108 1587483352.000000
 !s107 G:\GithubRepos\ECE176_Semester_Project\Decoder.v|
 !s90 -reportprogress|300|-work|work|-stats=none|G:\GithubRepos\ECE176_Semester_Project\Decoder.v|
 !i113 1
@@ -184,13 +184,13 @@ R6
 R7
 n@mux_2to1
 vTESTBENCH
-!s110 1587481375
+!s110 1587482873
 !i10b 1
-!s100 <FPzl^^@;X@oT1Rg7_oMk1
-IX^oR6aDfM8MQo8Z]^XMaV1
+!s100 <UhFJXS5d5Ee6c6bDMA771
+IWfhE`2mzK;md>>gNL;O_h3
 R1
 R2
-w1587481365
+w1587482869
 8G:/GithubRepos/ECE176_Semester_Project/TESTBENCH.v
 FG:/GithubRepos/ECE176_Semester_Project/TESTBENCH.v
 Fmodulo.v
@@ -200,7 +200,7 @@ R4
 r1
 !s85 0
 31
-!s108 1587481375.000000
+!s108 1587482873.000000
 !s107 sign_Extension.v|modulo.v|G:/GithubRepos/ECE176_Semester_Project/TESTBENCH.v|
 !s90 -reportprogress|300|-work|work|-stats=none|G:/GithubRepos/ECE176_Semester_Project/TESTBENCH.v|
 !i113 1

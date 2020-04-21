@@ -4,10 +4,10 @@ module Decoder(
 	output [2:0] R1, R2, R3,//Registers to be accessed
 	output [3:0] immediate);//Constant values for immediate instructions
 	
-	assign Opcode = instruction[12:9];
-	assign R1 = instruction[8:6];
-	assign R2 = instruction[5:3];
-	assign R3 = instruction[2:0];
+	assign Opcode = instruction[12:10];
+	assign R1 = instruction[9:7];
+	assign R2 = instruction[6:4];
+	assign R3 = instruction[3:1];
 	assign immediate = instruction[3:0];
 	
 	
