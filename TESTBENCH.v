@@ -11,7 +11,7 @@ module TESTBENCH();
 		#2;
 		#2;
 		#2;
-		#10 $finish;
+		#32 $finish;
 	end
 
 	always
@@ -87,6 +87,25 @@ module TESTBENCH();
 	end
 	Main_Memory Memory(address, dataIn, dataOut, write, read, instruction, clk, reset, Done);
 //---------------------------------------------
+	reg [2:0] Opcode;
+	wire [12:0] PC;
+	wire InstructionTypeSelect, WriteFlag, ReadFlag, instructionControl;
+	wire [2:0] ALU_Op;
+
+	//Testing Control
+	initial
+	begin
+		#2;//Wait for reset to finish
+		Opcode = 3'b00X; //Add or Sub
+		#10;
+		Opcode = 3'b01X;//Addi or Subi
+		#10;
+		Opcode = 3'b10X;//Branch
+		#10;
+		Opcode = 3'b11X;//Floating Point
+	end
+	
+	Control controller(clk, reset,Opcode,PC,InstructionTypeSelect,ALU_Op,WriteFlag, ReadFlag, instructionControl);
 //---------------------------------------------
 //---------------------------------------------
 //---------------------------------------------

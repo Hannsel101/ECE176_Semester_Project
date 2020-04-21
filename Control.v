@@ -1,6 +1,5 @@
 module Control(
 	input clk, reset,
-	input DoneALU,//ALU done performing arithmetic
 	input [2:0] Opcode,
 	output reg [12:0] PC,//Holds current address of current instruction
 	output reg InstructionTypeSelect,//Selector for R-type/I-type mux
@@ -94,7 +93,7 @@ module Control(
 					end
 				default: //Increment the program counter
 					begin
-						PC <= PC + 4;
+						PC <= PC + 1;//Increment 1 address space (13 bits)
 						state <= 0;
 					end
 			
