@@ -107,6 +107,12 @@ module TESTBENCH();
 	
 	Control controller(clk, reset,Opcode,PC,InstructionTypeSelect,ALU_Op,WriteFlag, ReadFlag, instructionControl);
 //---------------------------------------------
+	reg [12:0] instructionDecoder;
+	wire [2:0] OpcodeDecoder, R1, R2, R3;
+	wire [3:0] immediate;
+	
+	
+	Decoder decoder(instruction,Opcode,R1, R2, R3,immediate);
 //---------------------------------------------
 //---------------------------------------------
 //---------------------------------------------
