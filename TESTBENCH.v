@@ -155,6 +155,12 @@ module TESTBENCH();
 	
 	RegisterFile Registers(R1reg, R2reg, R3reg,ALU_Result,WriteFlagReg,reset,RegData2, RegData3);
 //---------------------------------------------
+	reg [2:0] ALU_Op_test;
+	reg [12:0] ALU_IN1, ALU_IN2;
+	wire BEQ;
+	wire [12:0] ALU_Result_test;
+	
+	ALU Alg_Logic_Unit(ALU_Op_test, ALU_IN1, ALU_IN2, BEQ, ALU_Result_test);
 //---------------------------------------------
 //---------------------------------------------
 //---------------------------------------------
