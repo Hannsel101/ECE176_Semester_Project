@@ -12,14 +12,7 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	Mux_2to1
 
-} {3.0 4.0} {}} G:/GithubRepos/ECE176_Semester_Project/TESTBENCH.v {1 {vlog -work work -stats=none G:/GithubRepos/ECE176_Semester_Project/TESTBENCH.v
-Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module TESTBENCH
-
-Top level modules:
-	TESTBENCH
-
-} {} {}} G:/GithubRepos/ECE176_Semester_Project/Cache.v {1 {vlog -work work -stats=none G:/GithubRepos/ECE176_Semester_Project/Cache.v
+} {3.0 4.0} {}} G:/GithubRepos/ECE176_Semester_Project/Cache.v {1 {vlog -work work -stats=none G:/GithubRepos/ECE176_Semester_Project/Cache.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module Cache
 
@@ -37,7 +30,14 @@ Top level modules:
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 ** Error: G:/GithubRepos/ECE176_Semester_Project/modulo.v(3): (vlog-2155) Global declarations are illegal in Verilog 2001 syntax.
 
-} {3.0 4.0} {}} G:/GithubRepos/ECE176_Semester_Project/Control.v {1 {vlog -work work -stats=none G:/GithubRepos/ECE176_Semester_Project/Control.v
+} {3.0 4.0} {}} G:/GithubRepos/ECE176_Semester_Project/RegisterFile.v {1 {vlog -work work -stats=none {G:\GithubRepos\ECE176_Semester_Project\RegisterFile.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module RegisterFile
+
+Top level modules:
+	RegisterFile
+
+} {} {}} G:/GithubRepos/ECE176_Semester_Project/Control.v {1 {vlog -work work -stats=none G:/GithubRepos/ECE176_Semester_Project/Control.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module Control
 

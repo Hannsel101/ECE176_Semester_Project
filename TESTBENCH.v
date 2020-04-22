@@ -107,6 +107,35 @@ module TESTBENCH();
 	
 	Control controller(clk, reset,Opcode,PC,InstructionTypeSelect,ALU_Op,WriteFlag, ReadFlag, instructionControl);
 //---------------------------------------------
+	reg [2:0] R1, R2, R3;
+	reg [12:0] ALU_Result;
+	reg WriteFlagReg;
+	wire [12:0] RegData2, RegData3;
+	
+	//Testing Register File
+	initial
+	begin
+		R1 = 1;
+		R2 = 2;
+		R3 = 3;
+		ALU_Result = 10;
+		#2
+		WriteFlagReg = 1;
+		#2
+		WriteFlagReg = 0;
+		R1 = 2;
+		#2
+		WriteFlagReg = 1;
+		#2
+		WriteFlagReg = 0;
+		R1 = 3;
+		ALU_Result = 3+3;
+		#2
+		WriteFlagReg = 1;
+	end
+	
+	
+	RegisterFile Registers(R1, R2, R3,ALU_Result,WriteFlagReg,reset,RegData2, RegData3);
 //---------------------------------------------
 //---------------------------------------------
 //---------------------------------------------

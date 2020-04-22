@@ -162,13 +162,13 @@ R6
 R7
 n@mux_2to1
 vRegisterFile
-!s110 1587486525
+!s110 1587569057
 !i10b 1
-!s100 >l3eEMN8MI:BJ`^aIIgjd3
-IWLgBa2<_S7>V>1[YCaJ?_3
+!s100 ;GoX^`B2^aRkUbG8ooQHN0
+IDVA<6aeS^JDMzFfM<I3bF2
 R1
 R2
-w1587486436
+w1587488144
 8G:\GithubRepos\ECE176_Semester_Project\RegisterFile.v
 FG:\GithubRepos\ECE176_Semester_Project\RegisterFile.v
 L0 1
@@ -176,7 +176,7 @@ R4
 r1
 !s85 0
 31
-!s108 1587486525.000000
+!s108 1587569057.000000
 !s107 G:\GithubRepos\ECE176_Semester_Project\RegisterFile.v|
 !s90 -reportprogress|300|-work|work|-stats=none|G:\GithubRepos\ECE176_Semester_Project\RegisterFile.v|
 !i113 1
@@ -184,13 +184,13 @@ R6
 R7
 n@register@file
 vTESTBENCH
-R0
+!s110 1587570498
 !i10b 1
-!s100 3P9N:fiO<zioN1c1_QgOG2
-I<=>Uk^O5;M=P:4Q846o3l1
+!s100 G`CAKURlHX^jg;m3Go]OI1
+IhbPcDehUEEmN^P[AJUR=@3
 R1
 R2
-w1587485923
+w1587570494
 8G:/GithubRepos/ECE176_Semester_Project/TESTBENCH.v
 FG:/GithubRepos/ECE176_Semester_Project/TESTBENCH.v
 Fmodulo.v
@@ -200,7 +200,7 @@ R4
 r1
 !s85 0
 31
-R5
+!s108 1587570498.000000
 !s107 sign_Extension.v|modulo.v|G:/GithubRepos/ECE176_Semester_Project/TESTBENCH.v|
 !s90 -reportprogress|300|-work|work|-stats=none|G:/GithubRepos/ECE176_Semester_Project/TESTBENCH.v|
 !i113 1
