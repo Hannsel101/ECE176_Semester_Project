@@ -9,7 +9,7 @@ z2
 cModel Technology
 dC:/Users/Hannselthill Camacho/Desktop/Spring2020/ECE176/project
 vCache
-Z0 !s110 1587480353
+Z0 !s110 1587486173
 !i10b 1
 !s100 V`FfRNAj`5O`Y69d7iilW3
 ICnCCZ0N[jD4`G0oL7]gnz2
@@ -23,7 +23,7 @@ Z4 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z5 !s108 1587480353.000000
+Z5 !s108 1587486173.000000
 !s107 G:/GithubRepos/ECE176_Semester_Project/Cache.v|
 !s90 -reportprogress|300|-work|work|-stats=none|G:/GithubRepos/ECE176_Semester_Project/Cache.v|
 !i113 1
@@ -183,6 +183,28 @@ r1
 R6
 R7
 n@mux_2to1
+vRegisterFile
+!s110 1587569057
+!i10b 1
+!s100 ;GoX^`B2^aRkUbG8ooQHN0
+IDVA<6aeS^JDMzFfM<I3bF2
+R1
+R2
+w1587488144
+8G:\GithubRepos\ECE176_Semester_Project\RegisterFile.v
+FG:\GithubRepos\ECE176_Semester_Project\RegisterFile.v
+L0 1
+R4
+r1
+!s85 0
+31
+!s108 1587569057.000000
+!s107 G:\GithubRepos\ECE176_Semester_Project\RegisterFile.v|
+!s90 -reportprogress|300|-work|work|-stats=none|G:\GithubRepos\ECE176_Semester_Project\RegisterFile.v|
+!i113 1
+R6
+R7
+n@register@file
 vTESTBENCH
 R8
 !i10b 1
@@ -191,6 +213,13 @@ IWfhE`2mzK;md>>gNL;O_h3
 R1
 R2
 R9
+!s110 1587570498
+!i10b 1
+!s100 G`CAKURlHX^jg;m3Go]OI1
+IhbPcDehUEEmN^P[AJUR=@3
+R1
+R2
+w1587570494
 8G:/GithubRepos/ECE176_Semester_Project/TESTBENCH.v
 FG:/GithubRepos/ECE176_Semester_Project/TESTBENCH.v
 Fmodulo.v
@@ -201,6 +230,7 @@ r1
 !s85 0
 31
 R10
+!s108 1587570498.000000
 !s107 sign_Extension.v|modulo.v|G:/GithubRepos/ECE176_Semester_Project/TESTBENCH.v|
 !s90 -reportprogress|300|-work|work|-stats=none|G:/GithubRepos/ECE176_Semester_Project/TESTBENCH.v|
 !i113 1
