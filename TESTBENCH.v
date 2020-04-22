@@ -124,7 +124,8 @@ module TESTBENCH();
 	end
 	
 	Decoder decoder(instructionDecoder,OpcodeDecoder,R1, R2, R3,immediate);
-	reg [2:0] R1, R2, R3;
+//---------------------------------------------	
+	reg [2:0] R1reg, R2reg, R3reg;
 	reg [12:0] ALU_Result;
 	reg WriteFlagReg;
 	wire [12:0] RegData2, RegData3;
@@ -132,27 +133,27 @@ module TESTBENCH();
 	//Testing Register File
 	initial
 	begin
-		R1 = 1;
-		R2 = 2;
-		R3 = 3;
+		R1reg = 1;
+		R2reg = 2;
+		R3reg = 3;
 		ALU_Result = 10;
 		#2
 		WriteFlagReg = 1;
 		#2
 		WriteFlagReg = 0;
-		R1 = 2;
+		R1reg = 2;
 		#2
 		WriteFlagReg = 1;
 		#2
 		WriteFlagReg = 0;
-		R1 = 3;
+		R1reg = 3;
 		ALU_Result = 3+3;
 		#2
 		WriteFlagReg = 1;
 	end
 	
 	
-	RegisterFile Registers(R1, R2, R3,ALU_Result,WriteFlagReg,reset,RegData2, RegData3);
+	RegisterFile Registers(R1reg, R2reg, R3reg,ALU_Result,WriteFlagReg,reset,RegData2, RegData3);
 //---------------------------------------------
 //---------------------------------------------
 //---------------------------------------------
