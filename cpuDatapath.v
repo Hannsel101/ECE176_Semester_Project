@@ -18,4 +18,23 @@ module cpuDatapath(
 	Main_Memory Instruction_And_Data(memPC, dataIn, dataOut, memWrite, memRead, memInstruction, clk, reset, memDone);
 	//************************************************//
 	
+	//**********DECODER SECTION OF WIRES****************//
+	wire [2:0] Opcode, R1, R2, R3;
+	wire [3:0] immediate;
+	
+	Decoder(memInstruction, Opcode, R1, R2, R3,immediate);
+	//************************************************//
+	
+	
+	//**********MEMORY SECTION OF WIRES****************//
+	//************************************************//
+	
+	
+	//**********MEMORY SECTION OF WIRES****************//
+	//************************************************//
+	
+	
+	//**********MEMORY SECTION OF WIRES****************//
+	//************************************************//
+	
 endmodule
