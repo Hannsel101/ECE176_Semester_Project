@@ -4,7 +4,8 @@ module cpuDatapath(
 	input [2:0] ALU_Op,
 	input [12:0] PC,
 	output BEQ, writeFlag,
-	output [12:0] newPC);
+	output [12:0] newPC,
+	output [2:0] Opcode);
 	
 	//**********MEMORY SECTION OF WIRES****************//
 	wire memRead, memWrite, memInstruction, memDone;
@@ -19,12 +20,11 @@ module cpuDatapath(
 	//************************************************//
 	
 	//**********DECODER SECTION OF WIRES****************//
-	wire [2:0] Opcode, R1, R2, R3;
+	wire [2:0] Opcode1, R1, R2, R3;
 	wire [3:0] immediate;
 	
-	Decoder Instruction_Decoder(memInstruction, Opcode, R1, R2, R3,immediate);
+	Decoder Instruction_Decoder(dataOut, Opcode1, R1, R2, R3,immediate);
 	//************************************************//
-	
 	
 	//**********REGISTER SECTION OF WIRES****************//
 	wire WriteFlag;
@@ -36,12 +36,16 @@ module cpuDatapath(
 	RegisterFile Registers(R1, R2, R3, ALU_Result, WriteFlag, reset, RegData2, RegData3);
 	//************************************************//
 	
+	//**********INTERMEDIATE COMPONENTS****************//
+	`include "sign_Extension.v"
+	wire [12:0] ALU_IN2, signExtendOut;
+
+	assign signExtendOut = sign_Extension(immediate);
+	Mux_2to1  #(13) Instr_Type_Mux(signExtendOut, RegData3, instructionType, ALU_IN2);
+	//*************************************************//
 	
 	//**********ALU SECTION OF WIRES****************//
-	//************************************************//
-	
-	
-	//**********MEMORY SECTION OF WIRES****************//
+	ALU Algo_Logic_Unit(ALU_IN2, RegData2, ALU_Op, ALU_Result);
 	//************************************************//
 	
 endmodule
