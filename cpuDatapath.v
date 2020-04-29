@@ -22,15 +22,22 @@ module cpuDatapath(
 	wire [2:0] Opcode, R1, R2, R3;
 	wire [3:0] immediate;
 	
-	Decoder(memInstruction, Opcode, R1, R2, R3,immediate);
+	Decoder Instruction_Decoder(memInstruction, Opcode, R1, R2, R3,immediate);
 	//************************************************//
 	
 	
-	//**********MEMORY SECTION OF WIRES****************//
+	//**********REGISTER SECTION OF WIRES****************//
+	wire WriteFlag;
+	wire [12:0] RegData2, RegData3;
+	assign WriteFlag = writeFlag;
+	
+	wire [12:0] ALU_Result;//Result from ALU
+	
+	RegisterFile Registers(R1, R2, R3, ALU_Result, WriteFlag, reset, RegData2, RegData3);
 	//************************************************//
 	
 	
-	//**********MEMORY SECTION OF WIRES****************//
+	//**********ALU SECTION OF WIRES****************//
 	//************************************************//
 	
 	
