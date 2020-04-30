@@ -5,7 +5,7 @@ module RegisterFile(
 	input Reset,//Flag to clear the contents of the registers
 	output [12:0] RegData2, RegData3);//Contents of registers pointed by R2 and R3
 	
-	reg [12:0] Registers [0:12];
+	reg [12:0] Registers [0:7];
 	
 	//Pass out the data for Registers 2 and 3 for ALU
 	assign RegData2 = Registers[R2];
@@ -24,11 +24,6 @@ module RegisterFile(
 			Registers[5] <= 0;
 			Registers[6] <= 0;
 			Registers[7] <= 0;
-			Registers[8] <= 0;
-			Registers[9] <= 0;
-			Registers[10] <= 0;
-			Registers[11] <= 0;
-			Registers[12] <= 0;
 		end
 		else if(WriteFlag)
 		begin

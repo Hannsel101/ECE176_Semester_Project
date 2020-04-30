@@ -1,23 +1,23 @@
-G:/GithubRepos/ECE176_Semester_Project/ALU.v {1 {vlog -work work -stats=none {G:\GithubRepos\ECE176_Semester_Project\ALU.v}
-Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module ALU
-
-Top level modules:
-	ALU
-
-} {} {}} G:/GithubRepos/ECE176_Semester_Project/Cache_Memory.v {1 {vlog -work work -stats=none G:/GithubRepos/ECE176_Semester_Project/Cache_Memory.v
+G:/GithubRepos/ECE176_Semester_Project/Cache_Memory.v {1 {vlog -work work -stats=none G:/GithubRepos/ECE176_Semester_Project/Cache_Memory.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module Cache_Memory
 
 Top level modules:
 	Cache_Memory
 
-} {} {}} G:/GithubRepos/ECE176_Semester_Project/Main_Memory.v {1 {vlog -work work -stats=none G:/GithubRepos/ECE176_Semester_Project/Main_Memory.v
+} {} {}} G:/GithubRepos/ECE176_Semester_Project/Main_Memory.v {1 {vlog -work work -stats=none {G:\GithubRepos\ECE176_Semester_Project\Main_Memory.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module Main_Memory
 
 Top level modules:
 	Main_Memory
+
+} {} {}} G:/GithubRepos/ECE176_Semester_Project/PROCESSOR_TESTBENCH.v {1 {vlog -work work -stats=none {G:\GithubRepos\ECE176_Semester_Project\PROCESSOR_TESTBENCH.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module ProcessorTB
+
+Top level modules:
+	ProcessorTB
 
 } {} {}} G:/GithubRepos/ECE176_Semester_Project/Processor.v {1 {vlog -work work -stats=none {G:\GithubRepos\ECE176_Semester_Project\Processor.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
@@ -26,7 +26,7 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	Processor
 
-} {} {}} G:/GithubRepos/ECE176_Semester_Project/TESTBENCH.v {1 {vlog -work work -stats=none G:/GithubRepos/ECE176_Semester_Project/TESTBENCH.v
+} {} {}} G:/GithubRepos/ECE176_Semester_Project/TESTBENCH.v {1 {vlog -work work -stats=none {G:\GithubRepos\ECE176_Semester_Project\TESTBENCH.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module TESTBENCH
 
@@ -44,25 +44,32 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	Cache
 
-} {} {}} G:/GithubRepos/ECE176_Semester_Project/sign_Extension.v {0 {vlog -work work -stats=none {G:\GithubRepos\ECE176_Semester_Project\sign_Extension.v}
-Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-** Error: G:\GithubRepos\ECE176_Semester_Project\sign_Extension.v(1): (vlog-2155) Global declarations are illegal in Verilog 2001 syntax.
-
-} {3.0 4.0} {}} G:/GithubRepos/ECE176_Semester_Project/RegisterFile.v {1 {vlog -work work -stats=none G:/GithubRepos/ECE176_Semester_Project/RegisterFile.v
+} {} {}} G:/GithubRepos/ECE176_Semester_Project/RegisterFile.v {1 {vlog -work work -stats=none {G:\GithubRepos\ECE176_Semester_Project\RegisterFile.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module RegisterFile
 
 Top level modules:
 	RegisterFile
 
-} {} {}} G:/GithubRepos/ECE176_Semester_Project/Decoder.v {1 {vlog -work work -stats=none G:/GithubRepos/ECE176_Semester_Project/Decoder.v
+} {} {}} G:/GithubRepos/ECE176_Semester_Project/sign_Extension.v {0 {vlog -work work -stats=none {G:\GithubRepos\ECE176_Semester_Project\sign_Extension.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+** Error: G:\GithubRepos\ECE176_Semester_Project\sign_Extension.v(1): (vlog-2155) Global declarations are illegal in Verilog 2001 syntax.
+
+} {3.0 4.0} {}} G:/GithubRepos/ECE176_Semester_Project/Decoder.v {1 {vlog -work work -stats=none {G:\GithubRepos\ECE176_Semester_Project\Decoder.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module Decoder
 
 Top level modules:
 	Decoder
 
-} {} {}} G:/GithubRepos/ECE176_Semester_Project/Mux_2to1.v {1 {vlog -work work -stats=none G:/GithubRepos/ECE176_Semester_Project/Mux_2to1.v
+} {} {}} G:/GithubRepos/ECE176_Semester_Project/cpuDatapath.v {1 {vlog -work work -stats=none {G:\GithubRepos\ECE176_Semester_Project\cpuDatapath.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module cpuDatapath
+
+Top level modules:
+	cpuDatapath
+
+} {} {}} G:/GithubRepos/ECE176_Semester_Project/Mux_2to1.v {1 {vlog -work work -stats=none {G:\GithubRepos\ECE176_Semester_Project\Mux_2to1.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module Mux_2to1
 
@@ -76,7 +83,7 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	Cache_Controller
 
-} {} {}} G:/GithubRepos/ECE176_Semester_Project/Control.v {1 {vlog -work work -stats=none G:/GithubRepos/ECE176_Semester_Project/Control.v
+} {} {}} G:/GithubRepos/ECE176_Semester_Project/Control.v {1 {vlog -work work -stats=none {G:\GithubRepos\ECE176_Semester_Project\Control.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module Control
 

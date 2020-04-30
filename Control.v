@@ -31,9 +31,6 @@ module Control(
 					end
 				3'b001://Run the instruction through the decoder
 					begin
-						instruction <= 0;
-						ReadFlag <= 0;
-						
 						casex(Opcode)//Determine output signal based on Opcode
 							3'b00X: //Add or Sub
 								begin
@@ -53,7 +50,7 @@ module Control(
 								end
 							default:
 								begin
-									$display("In default for Control. This should never happen!");
+									InstructionTypeSelect <= 0;
 								end
 						endcase
 						
@@ -61,6 +58,8 @@ module Control(
 					end
 				3'b010://Perform arithmetic operations
 					begin
+						instruction <= 0;
+						ReadFlag <= 0;
 						ALU_Op <= Opcode;//Send the new instruction to ALU
 						state <= state + 1;
 					end
@@ -71,15 +70,15 @@ module Control(
 								begin
 									WriteFlag <= 1;
 								end
-							3'b01X: //Addi or Subi
+							3'b01X: //Shift Immediate
 								begin
 									WriteFlag <= 0;
 								end
-							3'b10X: //Branching Instructions
+							3'b10X: //Add or sub immediate
 								begin
 									WriteFlag <= 0;
 								end
-							3'b11X: //Floating Point Operation
+							3'b11X: //Bitwise Logical
 								begin
 									WriteFlag <= 1;
 								end
@@ -95,6 +94,7 @@ module Control(
 					begin
 						PC <= PC + 1;//Increment 1 address space (13 bits)
 						state <= 0;
+						WriteFlag <= 0;
 					end
 			
 			endcase
