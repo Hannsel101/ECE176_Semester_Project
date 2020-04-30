@@ -4,7 +4,7 @@ module Control(
 	output reg [12:0] PC,//Holds current address of current instruction
 	output reg InstructionTypeSelect,//Selector for R-type/I-type mux
 	output reg[2:0] ALU_Op,//Operation code sent to the ALU
-	output reg WriteFlag, ReadFlag, instruction); //Flag signalling the Registers to begin writing current ALU result
+	output reg WriteFlag, ReadFlag, instruction, WriteReg, ALUSTART); //Flag signalling the Registers to begin writing current ALU result
 	
 	reg [2:0] state;//Current state of the system
 	
@@ -19,6 +19,7 @@ module Control(
 			WriteFlag <= 0;
 			ReadFlag <= 0;
 			instruction <= 0;
+			ALUSTART <= 0;
 		end
 		else//Normal Operation
 		begin
@@ -60,27 +61,33 @@ module Control(
 					begin
 						instruction <= 0;
 						ReadFlag <= 0;
+						ALUSTART <= 1;
 						ALU_Op <= Opcode;//Send the new instruction to ALU
 						state <= state + 1;
 					end
 				3'b011://Send the result to the appropriate location
 					begin
+						ALUSTART <= 0;
 						casex(Opcode)//Determine where to write into based on opcode
 							3'b00X: //Add or Sub
 								begin
 									WriteFlag <= 1;
+									WriteReg <= 1;
 								end
 							3'b01X: //Shift Immediate
 								begin
-									WriteFlag <= 0;
+									WriteFlag <= 1;
+									WriteReg <= 1;
 								end
 							3'b10X: //Add or sub immediate
 								begin
-									WriteFlag <= 0;
+									WriteFlag <= 1;
+									WriteReg <= 1;
 								end
 							3'b11X: //Bitwise Logical
 								begin
 									WriteFlag <= 1;
+									WriteReg <= 1;
 								end
 							default:
 								begin
@@ -95,6 +102,7 @@ module Control(
 						PC <= PC + 1;//Increment 1 address space (13 bits)
 						state <= 0;
 						WriteFlag <= 0;
+						WriteReg <= 0;
 					end
 			
 			endcase

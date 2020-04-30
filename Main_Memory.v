@@ -12,7 +12,7 @@ module Main_Memory(
 	
 	
 	//always @(posedge clk or reset or instruction)
-	always@(*)
+	always@(posedge clk or reset or instruction)
 	begin
 		//Async Reset
 		if(reset)//Flush Data
@@ -39,8 +39,7 @@ module Main_Memory(
 		begin
 			if(write)//Write into memory
 			begin
-				Data[address] <= dataIn;
-				Done <= 1;
+				Data[address] <= dataIn;			
 			end
 			else if(read)//Read from memories
 			begin
@@ -52,11 +51,10 @@ module Main_Memory(
 				begin
 					dataOut <= Data[address];
 				end
-				Done <= 1;
 			end
 			else//Debugging purposes
 			begin
-				$display("Currently used for debugging purposes");
+				//$display("Currently used for debugging purposes");
 			end
 		end
 	end

@@ -1,8 +1,9 @@
 //module ALU (input [12:0] a, [12:0] b, [2:0] sel, output reg [12:0] result);
 module ALU(input [12:0] a, b,
 			input [2:0] sel,
-			output reg [12:0] result);
-always @(*)
+			output reg [12:0] result,
+			input ALUSTART);
+always @(ALUSTART)
 begin
 case(sel)//control opcode
 3'b000 : result = a + b;//add

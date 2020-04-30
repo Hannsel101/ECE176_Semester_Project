@@ -6,7 +6,8 @@ module cpuDatapath(
 	output BEQ, writeFlag,
 	output [12:0] newPC,
 	output [2:0] Opcode,
-	output memDone);//ADDED MEMDONE recently XXXXXXXXXXXXXXXXXXXXXX
+	output memDone,
+	input ALUSTART);//ADDED MEMDONE recently and also ALUSTART XXXXXXXXXXXXXXXXXXXXXX
 	
 	//**********MEMORY SECTION OF WIRES****************//
 	wire [12:0] dataOut;
@@ -37,7 +38,7 @@ module cpuDatapath(
 	//*************************************************//
 	
 	//**********ALU SECTION OF WIRES****************//
-	ALU Algo_Logic_Unit(ALU_IN2, RegData2, ALU_Op, ALU_Result);
+	ALU Algo_Logic_Unit(ALU_IN2, RegData2, ALU_Op, ALU_Result, ALUSTART);
 	//************************************************//
 	
 endmodule

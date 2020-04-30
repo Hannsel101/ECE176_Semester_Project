@@ -12,7 +12,8 @@ module RegisterFile(
 	assign RegData3 = Registers[R3];
 	
 	
-	always@(WriteFlag or Reset)
+	//always@(WriteFlag or Reset)
+	always@(*)
 	begin
 		if(Reset)
 		begin
@@ -25,7 +26,7 @@ module RegisterFile(
 			Registers[6] <= 0;
 			Registers[7] <= 0;
 		end
-		else if(WriteFlag)
+		else //if(WriteFlag)
 		begin
 			Registers[R1] <= ALU_Result;
 		end
