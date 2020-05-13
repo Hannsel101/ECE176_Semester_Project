@@ -1,6 +1,10 @@
 module Control(
 	input clk, reset,
 	input [2:0] Opcode,
+	//Adding this
+	input branchFlag,
+	input [12:0] branchAddress,
+	//Adding above
 	output reg [12:0] PC,//Holds current address of current instruction
 	output reg InstructionTypeSelect,//Selector for R-type/I-type mux
 	output reg[2:0] ALU_Op,//Operation code sent to the ALU
@@ -41,11 +45,15 @@ module Control(
 								begin
 									InstructionTypeSelect <= 0;//Choose immediate over reg3
 								end
-							3'b10X: //Branching Instructions
+							3'b100: //Branching Instructions
 								begin
 									InstructionTypeSelect <= 0;//Choose immediate over reg3
 								end
-							3'b11X: //Floating Point Operation
+							3'b101://BEQ
+								begin
+									InstructionTypeSelect <= 1;//Choose reg3
+								end
+							3'b11X: //Store and load immediate instructions
 								begin
 									InstructionTypeSelect <= 1;
 								end
@@ -71,23 +79,31 @@ module Control(
 						casex(Opcode)//Determine where to write into based on opcode
 							3'b00X: //Add or Sub
 								begin
-									WriteFlag <= 1;
+									WriteFlag <= 0;
 									WriteReg <= 1;
 								end
-							3'b01X: //Shift Immediate
+							3'b01X: //Addi or subi
 								begin
-									WriteFlag <= 1;
+									WriteFlag <= 0;
 									WriteReg <= 1;
 								end
-							3'b10X: //Add or sub immediate
+							3'b10X: //br and beq
 								begin
-									WriteFlag <= 1;
-									WriteReg <= 1;
+									WriteFlag <= 0;
+									WriteReg <= 0;
 								end
-							3'b11X: //Bitwise Logical
+							3'b11X: //Store or load
 								begin
-									WriteFlag <= 1;
-									WriteReg <= 1;
+									if(Opcode == 3'b110)//Store
+									begin
+										WriteFlag <= 1;
+										WriteReg <= 0;
+									end
+									else//Load
+									begin
+										WriteFlag <= 0;
+										WriteReg <= 1;
+									end
 								end
 							default:
 								begin
@@ -99,7 +115,14 @@ module Control(
 					end
 				default: //Increment the program counter
 					begin
-						PC <= PC + 1;//Increment 1 address space (13 bits)
+						if(branchFlag)
+						begin
+							PC <= branchAddress;
+						end
+						else
+						begin
+							PC <= PC + 1;//Increment 1 address space (13 bits)
+						end
 						state <= 0;
 						WriteFlag <= 0;
 						WriteReg <= 0;

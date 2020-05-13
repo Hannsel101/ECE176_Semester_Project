@@ -26,7 +26,7 @@ module RegisterFile(
 			Registers[6] <= 0;
 			Registers[7] <= 0;
 		end
-		else //if(WriteFlag)
+		else if(WriteFlag)
 		begin
 			Registers[R1] <= ALU_Result;
 		end

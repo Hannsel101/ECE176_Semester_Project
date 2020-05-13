@@ -4,7 +4,8 @@ module Main_Memory(
 	output reg [12:0] dataOut,//Data being read
 	input write, read, instruction,//Flags sent by Control
 	input clk, reset,//system clock and reset
-	output reg Done);//Flag to indicate it has released or stored the contents requested
+	output reg Done,//Flag to indicate it has released or stored the contents requested
+	input [12:0] instructionIn, index);
 
 	reg [12:0] Data [0:12]; //13x13 array of data memory
 	reg [12:0] Instruction [0:12]; //13x13 array of Instruction memory
@@ -12,7 +13,7 @@ module Main_Memory(
 	
 	
 	//always @(posedge clk or reset or instruction)
-	always@(posedge clk or reset or instruction)
+	always@(posedge clk or reset or instruction or index)
 	begin
 		//Async Reset
 		if(reset)//Flush Data
@@ -30,10 +31,7 @@ module Main_Memory(
 				Data[10] <= 0;
 				Data[11] <= 0;
 				Data[12] <= 0;
-				Instruction[0] <= 13'b0000000010010;//add ans =0 r0=r1-r1
-				Instruction[1] <= 13'b0010010100100; //sub ans =0 r1=r2-r2
-				Instruction[2] <= 13'b1000100010001; //addi ans =1 r2=r1+1
-				Instruction[3] <= 13'b1010100100001;//subi ans =0 r2 =r2-1
+				Instruction[index] <= instructionIn;
 		end
 		else//Normal Operation
 		begin

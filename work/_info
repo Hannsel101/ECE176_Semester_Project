@@ -9,194 +9,194 @@ z2
 cModel Technology
 dC:/Users/Hannselthill Camacho/Desktop/Spring2020/ECE176/project
 vALU
-Z0 !s110 1588221116
+!s110 1589373733
 !i10b 1
-!s100 ?U;ZZFjK3E0nbf2D`T9IL1
-IcIkUW1jMIMSFX45Cj9[f03
-Z1 VDg1SIo80bB@j0V0VzS_@n1
-Z2 dG:/GithubRepos/ECE176_Semester_Project
-w1588221109
+!s100 djC<nGediHLIQ01_9e^jU2
+IDW[F]eXYelaQ]BVBZ;jZZ2
+Z0 VDg1SIo80bB@j0V0VzS_@n1
+Z1 dG:/GithubRepos/ECE176_Semester_Project
+w1589373727
 8G:\GithubRepos\ECE176_Semester_Project\ALU.v
 FG:\GithubRepos\ECE176_Semester_Project\ALU.v
-L0 2
-Z3 OV;L;10.5b;63
+L0 1
+Z2 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1588221116.000000
+Z3 !s108 1589373732.000000
 !s107 G:\GithubRepos\ECE176_Semester_Project\ALU.v|
 !s90 -reportprogress|300|-work|work|-stats=none|G:\GithubRepos\ECE176_Semester_Project\ALU.v|
 !i113 1
-Z5 o-work work
-Z6 tCvgOpt 0
+Z4 o-work work
+Z5 tCvgOpt 0
 n@a@l@u
 vCache
-Z7 !s110 1588219537
+Z6 !s110 1589360061
 !i10b 1
 !s100 V`FfRNAj`5O`Y69d7iilW3
 ICnCCZ0N[jD4`G0oL7]gnz2
+R0
 R1
-R2
-Z8 w1587477474
+Z7 w1587477474
 8G:/GithubRepos/ECE176_Semester_Project/Cache.v
 FG:/GithubRepos/ECE176_Semester_Project/Cache.v
 L0 1
-R3
+R2
 r1
 !s85 0
 31
-Z9 !s108 1588219537.000000
+Z8 !s108 1589360061.000000
 !s107 G:/GithubRepos/ECE176_Semester_Project/Cache.v|
 !s90 -reportprogress|300|-work|work|-stats=none|G:/GithubRepos/ECE176_Semester_Project/Cache.v|
 !i113 1
+R4
 R5
-R6
 n@cache
 vCache_Controller
-R7
+Z9 !s110 1589360062
 !i10b 1
 !s100 3k^NKFh7ZHATC_HZoL=NW1
 IRemgT[RjWB0]95nN4Pmb`2
+R0
 R1
-R2
-R8
+R7
 8G:/GithubRepos/ECE176_Semester_Project/Cache_Controller.v
 FG:/GithubRepos/ECE176_Semester_Project/Cache_Controller.v
 L0 1
-R3
+R2
 r1
 !s85 0
 31
-R9
+Z10 !s108 1589360062.000000
 !s107 G:/GithubRepos/ECE176_Semester_Project/Cache_Controller.v|
 !s90 -reportprogress|300|-work|work|-stats=none|G:/GithubRepos/ECE176_Semester_Project/Cache_Controller.v|
 !i113 1
+R4
 R5
-R6
 n@cache_@controller
 vCache_Memory
-R7
+R9
 !i10b 1
 !s100 ?1]o]Xlj7]h;7KRfY9VUX2
 IGlF2KJ=Ia?ZQa`:DJ;Sc;1
+R0
 R1
-R2
-R8
+R7
 8G:/GithubRepos/ECE176_Semester_Project/Cache_Memory.v
 FG:/GithubRepos/ECE176_Semester_Project/Cache_Memory.v
 L0 1
-R3
+R2
 r1
 !s85 0
 31
-R9
+R10
 !s107 G:/GithubRepos/ECE176_Semester_Project/Cache_Memory.v|
 !s90 -reportprogress|300|-work|work|-stats=none|G:/GithubRepos/ECE176_Semester_Project/Cache_Memory.v|
 !i113 1
+R4
 R5
-R6
 n@cache_@memory
 vControl
-R0
+!s110 1589373732
 !i10b 1
-!s100 lnU7dg>ShJYKdeEBZ5kjE2
-IzId<`4ThmP@24ZEbISeLZ2
+!s100 ]4YzA>;5Rb`XKIg<gj:E91
+IekaZcEA`I=8UnzJzIVF`W1
+R0
 R1
-R2
-w1588220988
+w1589373680
 8G:\GithubRepos\ECE176_Semester_Project\Control.v
 FG:\GithubRepos\ECE176_Semester_Project\Control.v
 L0 1
-R3
+R2
 r1
 !s85 0
 31
-R4
+R3
 !s107 G:\GithubRepos\ECE176_Semester_Project\Control.v|
 !s90 -reportprogress|300|-work|work|-stats=none|G:\GithubRepos\ECE176_Semester_Project\Control.v|
 !i113 1
+R4
 R5
-R6
 n@control
 vcpuDatapath
-!s110 1588221136
+Z11 !s110 1589362292
 !i10b 1
-!s100 CHW4@9CHbg;@RGP:DPHd03
-ImM3H4QEdkCh4JcXjan24f0
+!s100 ]TeY7V8PP;Y@EF`7RkLZL1
+IWBebKce9hT4[C;TTBcCPH3
+R0
 R1
-R2
-w1588221133
+w1589362237
 8G:\GithubRepos\ECE176_Semester_Project\cpuDatapath.v
 FG:\GithubRepos\ECE176_Semester_Project\cpuDatapath.v
-Z10 Fsign_Extension.v
+Z12 Fsign_Extension.v
 L0 1
-R3
+R2
 r1
 !s85 0
 31
-!s108 1588221136.000000
+Z13 !s108 1589362292.000000
 !s107 sign_Extension.v|G:\GithubRepos\ECE176_Semester_Project\cpuDatapath.v|
 !s90 -reportprogress|300|-work|work|-stats=none|G:\GithubRepos\ECE176_Semester_Project\cpuDatapath.v|
 !i113 1
+R4
 R5
-R6
 ncpu@datapath
 vDecoder
-R7
+R9
 !i10b 1
 !s100 HjDLHlNS0EOgVQYmS1iW[2
-IgY7?502DPHAM3BT1?aFX@2
+InWdSB4AR67U_W9nf_L1O@1
+R0
 R1
-R2
 w1587573371
-8G:\GithubRepos\ECE176_Semester_Project\Decoder.v
-FG:\GithubRepos\ECE176_Semester_Project\Decoder.v
+8G:/GithubRepos/ECE176_Semester_Project/Decoder.v
+FG:/GithubRepos/ECE176_Semester_Project/Decoder.v
 L0 1
-R3
+R2
 r1
 !s85 0
 31
-R9
-!s107 G:\GithubRepos\ECE176_Semester_Project\Decoder.v|
-!s90 -reportprogress|300|-work|work|-stats=none|G:\GithubRepos\ECE176_Semester_Project\Decoder.v|
+R10
+!s107 G:/GithubRepos/ECE176_Semester_Project/Decoder.v|
+!s90 -reportprogress|300|-work|work|-stats=none|G:/GithubRepos/ECE176_Semester_Project/Decoder.v|
 !i113 1
+R4
 R5
-R6
 n@decoder
 vMain_Memory
-!s110 1588220076
+R11
 !i10b 1
-!s100 3@f=5H@jI?bdOX_z_E1>B0
-Ii2M4^JH[D?_Ez8Em7c7j43
+!s100 9UhU^onocacd7JN[R1W[b0
+IRRnLmSS7GobkP6UkdPE9[1
+R0
 R1
-R2
-w1588220065
+w1589362208
 8G:\GithubRepos\ECE176_Semester_Project\Main_Memory.v
 FG:\GithubRepos\ECE176_Semester_Project\Main_Memory.v
 L0 1
-R3
+R2
 r1
 !s85 0
 31
-!s108 1588220076.000000
+R13
 !s107 G:\GithubRepos\ECE176_Semester_Project\Main_Memory.v|
 !s90 -reportprogress|300|-work|work|-stats=none|G:\GithubRepos\ECE176_Semester_Project\Main_Memory.v|
 !i113 1
+R4
 R5
-R6
 n@main_@memory
 vmodulo
 !s110 1587070142
 !i10b 1
 !s100 ATI5`_=RTGFi^6K;Vlzz[1
 IQ;Ba4B3BFHEM?Wg=LK<Ro1
+R0
 R1
-R2
 w1587070131
 8G:/GithubRepos/ECE176_Semester_Project/modulo.v
 FG:/GithubRepos/ECE176_Semester_Project/modulo.v
 L0 1
-R3
+R2
 r1
 !s85 0
 31
@@ -204,117 +204,117 @@ r1
 !s107 G:/GithubRepos/ECE176_Semester_Project/modulo.v|
 !s90 -reportprogress|300|-work|work|-stats=none|G:/GithubRepos/ECE176_Semester_Project/modulo.v|
 !i113 1
+R4
 R5
-R6
 vMux_2to1
-R7
+R6
 !i10b 1
 !s100 gXheW7iX=KeM7QUch3D]Y3
-IZ^AQCGJE1;QQTZTcPUO_K3
+InXRmo5Um7KTZe:E6@i;JI3
+R0
 R1
-R2
 w1586473144
-8G:\GithubRepos\ECE176_Semester_Project\Mux_2to1.v
-FG:\GithubRepos\ECE176_Semester_Project\Mux_2to1.v
+8G:/GithubRepos/ECE176_Semester_Project/Mux_2to1.v
+FG:/GithubRepos/ECE176_Semester_Project/Mux_2to1.v
 L0 1
-R3
+R2
 r1
 !s85 0
 31
-R9
-!s107 G:\GithubRepos\ECE176_Semester_Project\Mux_2to1.v|
-!s90 -reportprogress|300|-work|work|-stats=none|G:\GithubRepos\ECE176_Semester_Project\Mux_2to1.v|
+R8
+!s107 G:/GithubRepos/ECE176_Semester_Project/Mux_2to1.v|
+!s90 -reportprogress|300|-work|work|-stats=none|G:/GithubRepos/ECE176_Semester_Project/Mux_2to1.v|
 !i113 1
+R4
 R5
-R6
 n@mux_2to1
 vProcessor
-!s110 1588221185
+R11
 !i10b 1
-!s100 [D8_>m6G3@34bgg5L:g`b3
-INAM<]@]T1YFBVn`YWS<Je1
+!s100 EPcoe1Qnhez1XNmm5>JV;3
+ITQnIDklNlma98F7C<aeUA2
+R0
 R1
-R2
-w1588221175
+w1589362260
 8G:\GithubRepos\ECE176_Semester_Project\Processor.v
 FG:\GithubRepos\ECE176_Semester_Project\Processor.v
 L0 1
-R3
+R2
 r1
 !s85 0
 31
-!s108 1588221185.000000
+R13
 !s107 G:\GithubRepos\ECE176_Semester_Project\Processor.v|
 !s90 -reportprogress|300|-work|work|-stats=none|G:\GithubRepos\ECE176_Semester_Project\Processor.v|
 !i113 1
+R4
 R5
-R6
 n@processor
 vProcessorTB
-R7
+!s110 1589375065
 !i10b 1
-!s100 lMVdH=@7cPkAD;3Wm^<[J0
-IRLiS]^`ezodUR:M@K?OHJ3
+!s100 X?fAOEQ^f?59kkc]Ez3U^3
+IP5?h1]W?^jDL9m]I=fj7Y3
+R0
 R1
-R2
-w1588219525
+w1589375060
 8G:\GithubRepos\ECE176_Semester_Project\PROCESSOR_TESTBENCH.v
 FG:\GithubRepos\ECE176_Semester_Project\PROCESSOR_TESTBENCH.v
 L0 1
-R3
+R2
 r1
 !s85 0
 31
-R9
+!s108 1589375065.000000
 !s107 G:\GithubRepos\ECE176_Semester_Project\PROCESSOR_TESTBENCH.v|
 !s90 -reportprogress|300|-work|work|-stats=none|G:\GithubRepos\ECE176_Semester_Project\PROCESSOR_TESTBENCH.v|
 !i113 1
+R4
 R5
-R6
 n@processor@t@b
 vRegisterFile
-R7
+!s110 1589369632
 !i10b 1
-!s100 ]D>4AlUMZoiZZcdEcTmc63
-I<gKjPQ`c<e2;Wid?f]Fh30
+!s100 ]l:cec_h:faMd3Tge;m?Z2
+IE4aAoPZlVT;Vk4GSe]XYL0
+R0
 R1
-R2
-w1588219227
+w1589369629
 8G:\GithubRepos\ECE176_Semester_Project\RegisterFile.v
 FG:\GithubRepos\ECE176_Semester_Project\RegisterFile.v
 L0 1
-R3
+R2
 r1
 !s85 0
 31
-R9
+!s108 1589369632.000000
 !s107 G:\GithubRepos\ECE176_Semester_Project\RegisterFile.v|
 !s90 -reportprogress|300|-work|work|-stats=none|G:\GithubRepos\ECE176_Semester_Project\RegisterFile.v|
 !i113 1
+R4
 R5
-R6
 n@register@file
 vTESTBENCH
-R7
+R9
 !i10b 1
 !s100 F^@n2?0dPAR:`4jV16_fg3
-IbbLV]6lO@<`Di72HS52RT2
+IOkjFOg0OHi4An=MXD6OKX2
+R0
 R1
-R2
 w1588187359
-8G:\GithubRepos\ECE176_Semester_Project\TESTBENCH.v
-FG:\GithubRepos\ECE176_Semester_Project\TESTBENCH.v
+8G:/GithubRepos/ECE176_Semester_Project/TESTBENCH.v
+FG:/GithubRepos/ECE176_Semester_Project/TESTBENCH.v
 Fmodulo.v
-R10
+R12
 L0 1
-R3
+R2
 r1
 !s85 0
 31
-R9
-!s107 sign_Extension.v|modulo.v|G:\GithubRepos\ECE176_Semester_Project\TESTBENCH.v|
-!s90 -reportprogress|300|-work|work|-stats=none|G:\GithubRepos\ECE176_Semester_Project\TESTBENCH.v|
+R10
+!s107 sign_Extension.v|modulo.v|G:/GithubRepos/ECE176_Semester_Project/TESTBENCH.v|
+!s90 -reportprogress|300|-work|work|-stats=none|G:/GithubRepos/ECE176_Semester_Project/TESTBENCH.v|
 !i113 1
+R4
 R5
-R6
 n@t@e@s@t@b@e@n@c@h
